@@ -1,0 +1,16 @@
+streamlit==1.50.0
+pandas==2.3.2
+pytest==8.4.2
+fastapi==0.118.0
+pydantic==2.11.9
+uvicorn==0.37.0
+mysql-connector-python==9.4.0
+requests==2.32.5
+
+
+# pip freeze - for more details
+
+#########################################################################
+#Below command is used to install all the required package in single shot.
+# pip install -r .\requrements.txt
+#########################################################################

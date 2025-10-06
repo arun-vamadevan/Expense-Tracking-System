@@ -1,0 +1,36 @@
+
+'''
+st.title("Expense Management System")
+# if st.button("Send balloons!"):
+#     st.balloons()
+
+expense_dt = st.date_input("Expense Date:")
+if expense_dt:
+    st.write("fetching the date you enteered: ",expense_dt)
+
+st.header("I am a header")
+st.subheader("I am sub header")
+
+df = pd.DataFrame({
+    "Date": ["2024-5-6", "2025-6-7", "2026-6-7"],
+    "Amount": [230, 240, 250]
+})
+st.table(df)
+
+st.table({"column 1": [1,2,3], "column 2": [4,5,6]})
+name = st.number_input("Enter your name")
+
+st.subheader("Charts")
+st.line_chart([1,2,3,4])
+value = st.slider("Select a value", 0, 100)
+st.write(f"Selectd value: {value}")
+
+if st.checkbox("Show/Hide"):
+    st.write("Check box is checked")
+
+option = st.selectbox("PLease choose: ", [1,2,3,4,5])
+st.write(f"You selected option: ", option)
+
+options = st.multiselect("Please choose your options", [1,2,3,4,5,6,7])
+st.write(f"You selected {options}")
+'''
